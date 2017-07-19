@@ -13,10 +13,18 @@ function makeCard() {
   newDButton.innerHTML = "DELTE";
   newDiv.appendChild(newDButton);
 
+  let labelBackColor = document.createElement("label");
+  labelBackColor.innerHTML = "Change Background Color";
+  newDiv.appendChild(labelBackColor);
+
   let newBackColor = document.createElement("input");
   newBackColor.type = "color";
-  newBackColor.className = "button"
+  newBackColor.className = "button";
   newDiv.appendChild(newBackColor);
+  
+  let labelFontColor = document.createElement("label");
+  labelFontColor.innerHTML = "Change Font Color";
+  newDiv.appendChild(labelFontColor);
 
   let newFontColor = document.createElement("input");
   newFontColor.type = "color";
